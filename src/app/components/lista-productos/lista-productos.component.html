@@ -1,0 +1,3 @@
+<ul *ngFor="let producto of productos">
+    <app-carta-producto [productoRecibido]="producto" (eliminar)="eliminarProducto($event)"></app-carta-producto>
+</ul>

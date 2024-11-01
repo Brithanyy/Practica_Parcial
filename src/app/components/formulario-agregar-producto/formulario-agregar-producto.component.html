@@ -1,0 +1,30 @@
+<h1>Formulario para agregar un nuevo producto</h1>
+<div>
+    <form [formGroup]="formulario" (ngSubmit)="agregarProducto()">
+        <label>Nombre: </label>
+        <input type="text" formControlName = "nombre">
+        <br>
+        <small [hidden]="nombre?.valid || nombre?.pristine">El campo Nombre no debe quedar vacio</small>
+        <label>Info: </label>
+        <input type="text" formControlName = "descripcion">
+        <br>
+        <small [hidden]="descripcion?.valid || descripcion?.pristine">El campo Info no debe quedar vacio</small>
+        <label>Precio: </label>
+        <input type="number" formControlName = "precio">
+        <br>
+        <small [hidden]="precio?.valid || precio?.pristine">El campo Precio no debe quedar vacio</small>
+        <label>Categoria: </label>
+        <input type="text" formControlName = "categoria">
+        <br>
+        <small [hidden]="categoria?.valid || categoria?.pristine">El campo Categoria no debe quedar vacio</small>
+        <label>Stock: </label>
+        <input type="number" formControlName = "stock">
+        <br>
+        <small [hidden]="stock?.valid || stock?.pristine">El campo Stock no debe quedar vacio</small>
+        <label>Fecha: </label>
+        <input type="text" formControlName = "fechaCreacion">
+        <br>
+        <small [hidden]="fechaCreacion?.valid || fechaCreacion?.pristine">El campo Fecha no debe quedar vacio</small>
+        <button>Agregar Producto</button>
+    </form>
+</div>

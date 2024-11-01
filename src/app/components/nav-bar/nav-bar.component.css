@@ -1,0 +1,15 @@
+ul {
+    list-style: none;
+}
+nav {
+    background-color: darkblue;
+    margin-top: 0px;
+    padding: 0px;
+    height: 4rem;
+    text-align: center;
+}
+a {
+    color: white;
+    font-size: xx-large;
+    margin-left: 5rem;
+}

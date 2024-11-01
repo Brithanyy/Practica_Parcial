@@ -1,0 +1,10 @@
+<div class="card">
+<h1>Producto {{productoRecibido?.nombre}}</h1>
+<p>Descripcion: {{productoRecibido?.descripcion}}</p>
+<p>Precio: ${{productoRecibido?.precio}}</p>
+<p>Stock: {{productoRecibido?.stock}}</p>
+<p>Categoria: {{productoRecibido?.categoria}}</p>
+<p>Fecha Creacion: {{productoRecibido?.fechaCreacion}}</p>
+<button (click)="direccionar_detalle()">Detalle</button>
+<button (click)="eliminarProducto()">Eliminar</button>
+</div>

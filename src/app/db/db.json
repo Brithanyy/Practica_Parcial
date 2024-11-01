@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "0",
+      "nombre": "Iphone 13",
+      "descripcion": "Apple iphone 13",
+      "precio": 800,
+      "categoria": "Electronica",
+      "stock": 5,
+      "fechaCreacion": "30/10/2024"
+    },
+    {
+      "nombre": "ACTUALIZADO",
+      "descripcion": "sddfgfd",
+      "precio": 6165,
+      "categoria": "sdfsdfs",
+      "stock": 55,
+      "fechaCreacion": "sdgdgdf",
+      "id": "1"
+    }
+  ]
+}

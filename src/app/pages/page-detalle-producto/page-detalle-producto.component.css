@@ -1,0 +1,23 @@
+div {
+   text-align: center;
+}
+.form {
+   margin: 2rem auto 0;
+   text-align: center;
+   border: 3px solid darkblue;
+   width: 20rem;
+   height: 15rem;
+}
+
+form {
+   margin: 2rem;
+}
+input {
+   margin: 3px;
+}
+h1 {
+   text-align: center;
+}
+small {
+   color: red;
+}

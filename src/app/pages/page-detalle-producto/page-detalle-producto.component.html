@@ -1,0 +1,44 @@
+<div>
+    <h1>Detalle del Producto {{this.producto?.nombre}}</h1>
+    <p>Descripcion: {{this.producto?.descripcion}}</p>
+    <p>Precio: ${{this.producto?.precio}}</p>
+    <p>Stock: {{this.producto?.stock}}</p>
+    <p>Categoria: {{this.producto?.categoria}}</p>
+    <p>Fecha Creacion: {{this.producto?.fechaCreacion}}</p>
+    <button (click)="botonModificar()">Modificar</button>
+</div>
+@if (this.form_active) {
+    
+    <h1>Formulario para modificar un producto</h1>
+    <div class="form">
+    <form [formGroup]="formulario" (ngSubmit)="actualizarProducto()">
+        <label>Nombre: </label>
+        <input type="text" formControlName = "nombre">
+        <br>
+        <small [hidden]="nombre?.valid || nombre?.pristine">El campo Nombre no debe quedar vacio</small>
+        <label>Info: </label>
+        <input type="text" formControlName = "descripcion">
+        <br>
+        <small [hidden]="descripcion?.valid || descripcion?.pristine">El campo Info no debe quedar vacio</small>
+        <label>Precio: </label>
+        <input type="number" formControlName = "precio">
+        <br>
+        <small [hidden]="precio?.valid || precio?.pristine">El campo Precio no debe quedar vacio</small>
+        <label>Categoria: </label>
+        <input type="text" formControlName = "categoria">
+        <br>
+        <small [hidden]="categoria?.valid || categoria?.pristine">El campo Categoria no debe quedar vacio</small>
+        <label>Stock: </label>
+        <input type="number" formControlName = "stock">
+        <br>
+        <small [hidden]="stock?.valid || stock?.pristine">El campo Stock no debe quedar vacio</small>
+        <label>Fecha: </label>
+        <input type="text" formControlName = "fechaCreacion">
+        <br>
+        <small [hidden]="fechaCreacion?.valid || fechaCreacion?.pristine">El campo Fecha no debe quedar vacio</small>
+        <button>Modificar Producto</button>
+    </form>
+    </div>
+
+}
+
